@@ -155,12 +155,15 @@ em{
 article{
     text-indent: 4em;
 }
+#contacts{
+    padding-top: 9rem;
+}
 .textindent span{
     color: #f10215;
 }
-.life {
+/* .life {
     min-height: 66vh;
-}
+} */
 .life li{
     width: 140px;
     height:80px;
