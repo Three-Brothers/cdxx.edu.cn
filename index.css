@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+body{
+    font-size: 14px;
+    background-color: #ccc;
+}
+/* 导航样式 */
+nav {
+    background: #2c3e50;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    /* display: flex; */
+}
+.logo{
+    height: 52px;
+    /* float: left; */
+    overflow: hidden;
+    /* margin-top: 10px; */
+}
+.logo img{
+    height: 52px;
+}
+.logo h1{
+    margin: -48px 0 0 -9999px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    /* line-height: 50px; */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 2px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background: #3498db;
+}
+
+/* 公共样式 */
+section {
+    padding: 4rem 2rem;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 20px;
+}
+h3, h4 {
+    color: #34495e;
+    font-size: 16px;
+}
+/* 关于页面 */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.history-timeline {
+    /* margin-top: 2rem; */
+    margin-left: 60px;
+}
+
+/* 课程页面 */
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.course-card {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* cursor: pointer; */
+}
+#J_event p{
+    margin-top: 10px;
+}
+.course-card s{
+    color: orange;
+    text-decoration: none;
+}
+/* 联系页面 */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.course-card span{
+    margin-left: 20px;
+    color: #f10215;
+    font-size: 12px;
+}
+.course-card .p{
+    font-weight: 700;
+}
+.course-card li{
+    margin-left: 20px;
+    float: left;
+}
+#cls{
+    padding: 1rem 2rem;
+}
+.cls{
+    color: #f10215;
+}
+table{
+    border-collapse: collapse;
+    padding: 4rem 2rem;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+em{
+    color:#2c3e50;
+    font-style: normal;
+    font-weight: 700;
+}
+.promise span{
+    color: #f10215;
+}
+.textindent p{
+    text-indent: 2em;
+}
+article{
+    text-indent: 4em;
+}
+.textindent span{
+    color: #f10215;
+}
+#contactss{
+    min-height: 60vh;
+}
+.life li{
+    width: 140px;
+    height:80px;
+    list-style: none;
+    float: left;
+    margin: 6px 6px 0 0;
+}
+.life li img{
+    display: block;
+    width: 140px;
+    height: 100%;
+}
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .about-content,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
