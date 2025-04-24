@@ -48,8 +48,8 @@ nav a:hover {
 
 /* 公共样式 */
 section {
-    padding: 4rem 2rem;
-    min-height: 100vh;
+    padding: 1rem 1rem;
+    min-height: 70vh;
 }
 
 h1, h2 {
@@ -72,11 +72,11 @@ h3, h4 {
 }
 
 .history-timeline {
-    /* margin-top: 2rem; */
     margin-left: 60px;
 }
 
 /* 课程页面 */
+
 .courses-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -90,7 +90,6 @@ h3, h4 {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    /* cursor: pointer; */
 }
 #J_event p{
     margin-top: 10px;
@@ -159,8 +158,8 @@ article{
 .textindent span{
     color: #f10215;
 }
-#contactss{
-    min-height: 60vh;
+.life {
+    min-height: 66vh;
 }
 .life li{
     width: 140px;
