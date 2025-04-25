@@ -62,6 +62,10 @@ h3, h4 {
     color: #34495e;
     font-size: 16px;
 }
+.clearfix h3{
+    margin: 12px auto;
+    text-align: center;
+}
 /* 关于页面 */
 .about-content {
     display: grid;
@@ -155,25 +159,23 @@ em{
 article{
     text-indent: 4em;
 }
-#contacts{
-    padding-top: 9rem;
-}
 .textindent span{
     color: #f10215;
 }
-/* .life {
+.life {
     min-height: 66vh;
-} */
+}
 .life li{
-    width: 140px;
-    height:80px;
+    width: 180px;
+    height: 100px;
     list-style: none;
     float: left;
     margin: 6px 6px 0 0;
 }
 .life li img{
     display: block;
-    width: 140px;
+    /* width: 140px; */
+    width: 180px;
     height: 100%;
 }
 footer {
@@ -188,4 +190,13 @@ footer {
     .contact-container {
         grid-template-columns: 1fr;
     }
+}
+
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
